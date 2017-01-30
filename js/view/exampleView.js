@@ -6,5 +6,13 @@ var ExampleView = function (container, model) {
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest")
 	this.numberOfGuests.html(model.getNumberOfGuests());
+
+	model.addDishToMenu(1);
+	model.addDishToMenu(2);
+	model.addDishToMenu(3);
+	console.log(model.menu);
+	console.log('tar bort nr 2');
+	model.removeDishFromMenu(2);
+	console.log(model.menu);
 }
- 
+
