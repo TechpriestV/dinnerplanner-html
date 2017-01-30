@@ -147,4 +147,5 @@ a:hover {
 }
 .content{
 	margin-left: 175px;
+	overflow: hidden;
 }
