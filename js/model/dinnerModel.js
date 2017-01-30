@@ -9,17 +9,7 @@ var DinnerModel = function() {
 
 	this.setNumberOfGuests = function(p) {
 		//TODO Lab 2
-		if (p == 'up'){
-			this.guests += 1;
-		}
-		else if (p == 'down') {
-			if (this.guests == 0){
-				alert('You cant have a negative number of guests!');
-			}
-			else {
-				this.guests -= 1;
-			}
-		}
+		this.guests = p;
 	}
 
 	// should return 
