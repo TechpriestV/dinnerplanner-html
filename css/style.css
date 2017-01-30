@@ -153,11 +153,30 @@ a:hover {
 	margin-left: 175px;
 	overflow: hidden;
 }
-.corseSelect{
+.courseSelect{
 	margin-left: 4%;
 	min-width: 200px;
 }
 
 .recipes {
 	margin-top: 25px;
+	padding: 25px;
+}
+
+.recipe-item {
+	display: inline-block;
+	width: 20%;
+	margin-right: 5%;
+	text-align: center;
+	overflow: hidden;
+	border:1px solid #000;
+}
+.recipe-item_image img {
+	height: 150px;
+}
+.recipe-item_heading {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	background: #eee;
 }
