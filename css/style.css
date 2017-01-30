@@ -138,6 +138,10 @@ a:hover {
 	padding: 15px;
 	width: 100%;
 	background: rgba(255,224,130,1);
+	border-bottom: 1px solid #000;
+}
+.searchBox input {
+	padding: 10px;
 }
 .searchBox-title {
 	width: 100%;
@@ -151,4 +155,5 @@ a:hover {
 }
 .corseSelect{
 	margin-left: 4%;
+	min-width: 200px;
 }
