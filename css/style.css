@@ -75,11 +75,12 @@ a:hover {
 }
 
 .sidebar {
-	width: 175px;
+	width: 15%;
 	height: 100%;
 	background: #eee;
 	border-right: 1px solid #000;
 	z-index: 1;
+	display: inline-block;
 }
 
 .sidebar-top {
@@ -135,9 +136,14 @@ a:hover {
 .searchBox {
 	margin-bottom: 10px;
 	padding: 15px;
-	max-width: 100%;
+	width: 100%;
 }
 .searchBox-title {
 	width: 100%;
 	margin-bottom: 10px;
+}
+.content{
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
 }
