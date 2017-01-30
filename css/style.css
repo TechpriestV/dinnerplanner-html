@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+
+html,body,.page,#view1 {
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+}
+
+body.view-start {
+	background: #fff url(../images/pizza.jpg) no-repeat center;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+.header {
+	padding: 25px;
+	background: #BDBDBD;
+	border-bottom:2px solid #000;
+}
+.view-start .header {
+	background: rgba(255,224,130,0.8);
+}
+
+.header-title {
+	margin-right: 15px;
+	font-size: 45px;
+}
+
+.header-title__small {
+ 	font-size: 20px;
+}
+
+.is-inline {
+	display: inline-block;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.stretched {
+	width: 100%;
+}
+
+.sidebar {
+	width: 175px;
+	height: 100%;
+	background: #eee;
+	border-right: 1px solid #000;
+	z-index: 1;
+}
+
+.sidebar-top {
+	padding: 10px;
+}
+
+.sidebar-headline {
+	background: #9E9E9E;
+	padding: 10px;
+	text-align: center;
+	z-index: 0;
+}
+
+.sidebar-bottom {
+	margin: 10px;
+	padding-bottom: 10px;
+	color: #C62828;
+	border-bottom:1px solid #000;
+}
+.sidebar-bottomest {
+	padding: 10px;
+	color: #C62828;
+}
+
+.btn {
+	display: inline-block;
+	
+	padding: 10px;
+	color: #000;
+	background: #FFB74D;
+	border:2px solid #000;
+}
+
+.btn-big {
+	font-size: 24px;
+	padding: 15px;
+}
+
+.start-box {
+	margin-top: 150px;
+	padding: 15px;
+	background: rgba(255,255,255,0.8);
+	max-width: 500px;
+
+}
+
+.start-box-bar {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	border-bottom:2px solid #000;
+}
