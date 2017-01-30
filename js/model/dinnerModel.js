@@ -42,16 +42,22 @@ var DinnerModel = function() {
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
 		//TODO Lab 2
+		var allIngridients = []
+		for (i in this.menu){
+			for(j in this.menu[i].ingredients){
+				allIngridients.push(this.menu[i].ingredients[j])
+			}
+		}
+		return allIngridients 
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
 		//TODO Lab 2
 		var totPrice = 0;
-		for (i in this.menu) {
-			for (j in this.menu[i].ingredients){
-				totPrice += this.menu[i].ingredients[j].price;
-			}
+		var allIngridients = this.getAllIngredients();
+		for (i in allIngridients){
+			totPrice += allIngridients[i].price;
 		}
 		return totPrice * this.guests;
 	}
