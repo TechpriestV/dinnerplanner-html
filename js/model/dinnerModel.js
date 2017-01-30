@@ -50,7 +50,7 @@ var DinnerModel = function() {
 		var totPrice = 0;
 		for (i in this.menu) {
 			for (j in this.menu[i].ingredients){
-				totPrice += ingredients[i].price;
+				totPrice += this.menu[i].ingredients[j].price;
 			}
 		}
 		return totPrice * this.guests;
