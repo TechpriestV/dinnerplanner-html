@@ -75,7 +75,7 @@ a:hover {
 }
 
 .sidebar {
-	width: 15%;
+	width: 175px;
 	height: 100%;
 	background: #eee;
 	border-right: 1px solid #000;
@@ -144,6 +144,5 @@ a:hover {
 }
 .content{
 	display: inline-block;
-	width: 80%;
 	vertical-align: top;
 }
