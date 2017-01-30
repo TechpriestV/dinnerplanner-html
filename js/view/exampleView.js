@@ -10,9 +10,5 @@ var ExampleView = function (container, model) {
 	model.addDishToMenu(1);
 	model.addDishToMenu(2);
 	model.addDishToMenu(3);
-	console.log(model.menu);
-	console.log('tar bort nr 2');
-	model.removeDishFromMenu(2);
-	console.log(model.menu);
 }
 

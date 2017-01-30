@@ -21,13 +21,17 @@ var DinnerModel = function() {
 	}
 
 	//Returns the dish that is on the menu for selected type 
-	this.getSelectedDish = function(type) {
-		for(id in this.menu){
-			var dish = this.getDish(id);
-			if (dish.type == type){
-				return id;
+	this.getSelectedDish = function(type) {	
+		for(i in this.menu){
+			var dish = this.menu[i];
+			if(dish.type == type){
+				return dish;
+			}
+			else {
+				return false;
 			}
 		}
+		return false;
 	}
 
 	//Returns all the dishes on the menu.
@@ -49,7 +53,18 @@ var DinnerModel = function() {
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
 		var dish = this.getDish(id);
-		this.menu.push(dish);
+		
+		// Check if there is another dish of same type
+		var existing_dish = this.getSelectedDish(dish.type);
+		
+		if (existing_dish){
+			var e_index = this.menu.indexOf(existing_dish);
+			this.menu[e_index] = dish;
+		}
+		else {
+			this.menu.push(dish);
+		}
+
 	}
 
 	//Removes dish from menu
