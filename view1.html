@@ -18,40 +18,19 @@
 			<h3 class="header-title__small is-inline">From the best chefs in the world directly into your kitchen</h3>
 		</div>
 		<div id="view1">
-			<div class="sidebar">
-				<div class="sidebar-top">
-					<h2>My dinner</h2>
-					People: <span class="guests">1</span>
-				</div>
-				<div class="sidebar-headline clearfix">
-					<div class="left">Dish Name</div>
-					<div class="right">Cost</div>
-				</div>
-				<div class="sidebar-bottom clearfix">
-					<div class="bb">
-						<div class="left">Pending</div>
-						<div class="right">0.00</div>
-					</div>
-				</div>
-				<div class="sidebar-bottomest">
-
-					<div class="right">
-						SEK: 0.00
-					</div>
-					<br><br>
-					<a class="btn stretched disabled" href="#">Confirm Dinner </a> 
-				</div>
-			</div>
-			<div class="content">
+			<div class="content" id="js-recipes">
                 <div class="searchBox">
                     <h2 class="searchBox-title">Select dish</h2>
-                    <input type="text" name="" placeholder="Food mcFoodson">
+                    <input class="search" type="text" name="" placeholder="Food mcFoodson">
                     <button class="btn">Search</button>
-                    <select class="corseSelect">
+                    <select class="courseSelect">
                         <option>Starter</option>
-                        <option>Main</option>
+                        <option>Main dish</option>
                         <option>Dessert</option>
                     </select>
+                </div>
+                <div class="recipes">
+					
                 </div>
 			</div>
 		</div>
@@ -65,7 +44,8 @@
 	<!-- The application JavaScript code -->
 	<script src="js/app.js"></script>
 	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
+	<script src="js/view/sideBarView.js"></script>
+	<script src="js/view/foodGridView.js"></script>
 	<!--<script src="js/view/exampleViewController.js"></script>-->
   </body>
 </html>
