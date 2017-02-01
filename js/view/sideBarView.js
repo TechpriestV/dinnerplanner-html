@@ -3,11 +3,12 @@ var SideBarView = function (container, model) {
 	// Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
   	this.header = $('.header');
+  	this.guests = model.guests;
   	this.content = '\
 		<div class="sidebar">\
 			<div class="sidebar-top">\
 				<h2>My dinner</h2>\
-				People: <span class="guests">1</span>\
+				People: <span class="guests">'+this.guests+'</span>\
 			</div>\
 			<div class="sidebar-headline clearfix">\
 				<div class="left">Dish Name</div>\

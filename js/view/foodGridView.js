@@ -14,7 +14,7 @@ var FoodGridView = function (container, model) {
 		for(i in dishes){
 			var dish = dishes[i];
 			holder.append(function(){
-				var content = '<a href="view2.html>"><div class="recipe-item">';
+				var content = '<a href="view2.html"><div class="recipe-item">';
 				content += '<div class="recipe-item_image"><img src="images/'+dish.image+'"</div>';
 				content += '<div class="recipe-item_heading">'+dish.name+'</div>';
 				content += '</div></a>';
