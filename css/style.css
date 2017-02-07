@@ -2,10 +2,8 @@
 	box-sizing: border-box;
 }
 
-html,body,.page,#view1 {
+html,body,.page{
 	height: 100%;
-	overflow: hidden;
-	
 }
 
 body {
@@ -149,9 +147,21 @@ a:hover {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
-.content{
-	overflow: hidden;
+.content {
+	margin-left: 175px;
 }
+
+.content-left,
+.content-right {
+	width: 49.5%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.content-left {
+	padding: 15px 50px;
+}
+
 .courseSelect{
 	margin-left: 4%;
 	min-width: 200px;
@@ -178,4 +188,25 @@ a:hover {
 	line-height: 50px;
 	font-size: 16px;
 	background: #eee;
+}
+
+/* SINGLE RECIPE PAGE */
+.recipe-heading {}
+.recipe-image {
+	margin-top: 25px;
+}
+
+.recipe-image img {
+	width: 100%;
+}
+
+.recipe-text {
+	padding-top: 15px;
+}
+
+.recipe-ingredients {
+	padding: 15px;
+	background: #FFB74D;
+	border:2px solid #000;
+	border-top: none;
 }

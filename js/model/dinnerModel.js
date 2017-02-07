@@ -51,6 +51,18 @@ var DinnerModel = function() {
 		return allIngridients; 
 	}
 
+	//Returns all ingredients for a selected dish
+	this.getAllIngredientsDish = function(id) {
+		//TODO Lab 2
+		var allIngridients = []
+		var selectedDish = this.getDish(id);
+
+		for(j in selectedDish.ingredients){
+			allIngridients.push(selectedDish.ingredients[j]);
+		}
+		return allIngridients; 
+	}
+
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
 		//TODO Lab 2
