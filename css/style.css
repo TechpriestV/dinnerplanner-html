@@ -206,7 +206,34 @@ a:hover {
 
 .recipe-ingredients {
 	padding: 15px;
-	background: #FFB74D;
+	background: rgba(255,224,130,1);
 	border:2px solid #000;
 	border-top: none;
+}
+
+.recipe-ingredients_heading {
+	padding-bottom: 5px;
+	border-bottom:2px solid #000;
+}
+
+.recipe-ingredients_content {
+	padding: 15px;
+	width: 100%;
+	border-bottom: 2px solid #000;
+}
+
+.recipe-ingredients_content td {
+	padding: 5px;
+}
+
+.recipe-summary {
+	padding: 15px;
+}
+
+.recipe-confirmbtn {
+	float: left;
+}
+
+.recipe-totalprice {
+	float: right;
 }

@@ -5,7 +5,7 @@ var DinnerModel = function() {
 	// and selected dinner options for dinner menu
 	
 	// Starts at one guest
-	this.guests = 1;
+	this.guests = 4;
 
 	this.menu = [];
 
