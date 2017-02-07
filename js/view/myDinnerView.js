@@ -4,7 +4,7 @@ var MyDinnerView = function (container, model) {
     // and/or ones that responed to interaction)
 	// var select = $('.courseSelect'); //SKA BYTAS
 	var dishesHolder = $('.dinnerOverview'); 
-
+    
 
   //Hårdkodad uppsättning dishes
     this.guests = model.guests;
@@ -16,15 +16,25 @@ var MyDinnerView = function (container, model) {
             console.log("HEJ")
             var dish = model.getDish(menu[id]);
             console.log(dish);
+            
             holder.append(function() {
                 var content = '<div class="recipe-item">';
                 content += '<div class="recipe-item_image"><img src="images/'+dish.image+'"</div>';
                 content += '<div class="recipe-item_heading">'+dish.name+'</div>';
+                content += '<div class="">'+model.detDishPrice(menu[id])+ '  SEK </div>';
                 content += '</div>';
                 return content;
             });
         }
+        holder.append(function(){
+            var content ='<div>';
+            content += '<div> Total: <br></div>'
+            content += '<div> ' + model.getTotalMenuPrice() + '  SEK</div>';
+            content += '</div>';
+            return content
+        });
     }
+
     // This should be in the controller
     // change back to using .this in order for the controller to use acess from outside
     populateDishes(dishesHolder);

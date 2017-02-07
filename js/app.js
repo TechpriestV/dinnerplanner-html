@@ -14,6 +14,9 @@ $(function() {
 		var singeDishView = new SingleDishView($("#js-recipes"),model);
 	}
 	if ($('.view-3').length){
+		model.addDishToMenu(1);
+		model.addDishToMenu(100);
+		model.addDishToMenu(202);
 		var myDinnerView = new MyDinnerView($("#js-dinnerOverview"), model);
 	}
 });
