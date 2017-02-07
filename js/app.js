@@ -10,5 +10,8 @@ $(function() {
 	}
 	if($('.view-2').length){
 		var singeDishView = new SingleDishView($("#js-recipes"),model);
+	}j
+	if ($('.view-3').length){
+		var myDinnerView = new MyDinnerView($("#dinnerOverview"), model);
 	}
 });
