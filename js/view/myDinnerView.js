@@ -7,21 +7,21 @@ var MyDinnerView = function (container, model) {
     
 
   //Hårdkodad uppsättning dishes
-    this.guests = model.guests;
-    var menu = [1,2,3]//model.menu;
-
+    var guests = model.getNumberOfGuests();
+    var menu = model.getFullMenu();
+    console.log(menu)
     var populateDishes = function (holder) {
         holder.html('');
-        for (id in menu) {
+        for (dish in menu) {
             console.log("HEJ")
-            var dish = model.getDish(menu[id]);
+            var dish = menu[dish];
             console.log(dish);
             
             holder.append(function() {
                 var content = '<div class="recipe-item">';
                 content += '<div class="recipe-item_image"><img src="images/'+dish.image+'"</div>';
                 content += '<div class="recipe-item_heading">'+dish.name+'</div>';
-                content += '<div class="">'+model.detDishPrice(menu[id])+ '  SEK </div>';
+                content += '<div class="">'+model.detDishPrice(dish.id)*guests+ '  SEK </div>';
                 content += '</div>';
                 return content;
             });
