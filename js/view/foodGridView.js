@@ -17,7 +17,8 @@ var FoodGridView = function (container, model) {
 				var content = '<a href="view2.html"><div class="recipe-item">';
 				content += '<div class="recipe-item_image"><img src="images/'+dish.image+'"</div>';
 				content += '<div class="recipe-item_heading">'+dish.name+'</div>';
-				content += '</div></a>';
+				content += '</div>';
+				content += '</a>';
 				return content;
 			});
 		}

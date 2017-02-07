@@ -5,4 +5,5 @@ $(function() {
 	//And create the needed controllers and views
 	var sideBarView = new SideBarView($(".page"),model);
 	var foodGridView = new FoodGridView($("#js-recipes"),model);
+	// var singeDishView = new SingleDishView($("#js-recipes"),model);
 });
