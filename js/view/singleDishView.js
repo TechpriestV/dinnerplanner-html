@@ -29,7 +29,7 @@ var SingleDishView = function (container, model) {
 	this.totalprice = 0;
 	for(i in this.allIngredients){
 		var ingredient = this.allIngredients[i];
-		this.totalprice += ingredient.price;
+		this.totalprice += ingredient.price * this.numberOfGuests;
 		console.log(ingredient);
 		var quantity = ingredient.quantity * this.numberOfGuests;
 		var content = '\
@@ -37,7 +37,7 @@ var SingleDishView = function (container, model) {
 			<td>'+quantity+' '+ ingredient.unit+'</td>\
 			<td>'+ingredient.name+'</td>\
 			<td>SEK</td>\
-			<td>'+ingredient.price+'</td>\
+			<td>'+ingredient.price * this.numberOfGuests+'</td>\
 			</tr>';
 		this.ingredientsContent.append(content);
 	}
