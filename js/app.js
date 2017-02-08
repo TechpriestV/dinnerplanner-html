@@ -19,4 +19,11 @@ $(function() {
 		model.addDishToMenu(202);
 		var myDinnerView = new MyDinnerView($("#js-dinnerOverview"), model);
 	}
+
+	if ($('.view-4').length){
+		model.addDishToMenu(1);
+		model.addDishToMenu(100);
+		model.addDishToMenu(202);
+		var printView = new PrintView($("#js-dinnerPrint"), model);
+	}
 });
