@@ -25,7 +25,7 @@ var SideBarView = function (container, model) {
 					SEK: 0.00\
 				</div>\
 				<br><br>\
-				<a class="btn stretched disabled" href="#">Confirm Dinner </a> \
+				<a class="btn stretched" href="view3.html">Confirm Dinner </a> \
 			</div>\
 		</div>';
 
