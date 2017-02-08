@@ -13,7 +13,6 @@ var MyDinnerView = function (container, model) {
     var populateDishes = function (holder) {
         holder.html('');
         for (dish in menu) {
-            console.log("HEJ")
             var dish = menu[dish];
             console.log(dish);
             
@@ -27,7 +26,7 @@ var MyDinnerView = function (container, model) {
             });
         }
         holder.append(function(){
-            var content ='<div>';
+            var content ='<div class="totalprice">';
             content += '<div> Total: <br></div>'
             content += '<div> ' + model.getTotalMenuPrice() + '  SEK</div>';
             content += '</div>';

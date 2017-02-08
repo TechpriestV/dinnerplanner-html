@@ -72,6 +72,11 @@ a:hover {
 	width: 100%;
 }
 
+.wiped {
+	margin: 0;
+	padding: 0;
+}
+
 .sidebar {
 	width: 175px;
 	height: 100%;
@@ -149,6 +154,10 @@ a:hover {
 }
 .content {
 	margin-left: 175px;
+}
+
+#view3 .content {
+	margin-left: 0;
 }
 
 .content-left,
@@ -236,4 +245,25 @@ a:hover {
 
 .recipe-totalprice {
 	float: right;
+}
+
+.topBox {
+	padding: 15px;
+	background: rgba(255,224,130,1);
+	border-bottom: 2px solid #000;
+}
+
+.dinnerOverview {
+	text-align: center;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+
+	padding-bottom: 15px;
+	border-bottom: 2px solid #000;
+}
+
+.totalprice {
+	margin-top: 25px;
+	font-size: 20px;
 }
